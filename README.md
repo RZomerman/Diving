@@ -1,13 +1,17 @@
 # Diving
 
-This is for the Mares Horizon only - to determine / calculate the required info, the following modules are available
+This is for the Mares Horizon only - to determine / calculate the required info.
+
+All calculations use meters and the digits for o2 % *(such as 40 and 32   - for 40 meters and 32 percent nitrox)
+
+the following modules are available
 
 #DivePlanRow
 Calculates the required output for a single row in the Horizon Diveplanner, including NOAA and OTU limits
 
 DivePlanRow -depth -minutes -gas- Fo2Setpoint -vo2
 
-* Depth  - depth for the row to be filled
+* Depth  - depth for the row to be filled (in meters)
 * Minutes  - minutes at that depth
 * Gas - bottomgas (cylinder) or deco gas (cylinder)
 * Fo2Setpoint - setpoint set in the system (bailout or bottom)
@@ -18,13 +22,11 @@ DivePlanRow -depth -minutes -gas- Fo2Setpoint -vo2
 # Flow Rate Calculation
 Calculate the flow rate in your system
 
-
 CalculateFlowRate -vo2 -looppercentage -gaspercentage
 
-
-* vo2 is your VO2 (usually 0.8 or 1.0)
-* looppercentage is your setpoint 
-* gaspercentage is what you have in your cylinder
+* vo2 - is your VO2 (usually 0.8 or 1.0)
+* looppercentage - is your setpoint 
+* gaspercentage - is what you have in your cylinder
 
 # Max O2 Calculation
 
@@ -34,15 +36,15 @@ calculate the maximum amount of O2 you can have for your depth (at usually 1.4 o
 MaxO2 -ppo2 -depth
 
 
-* ppo2
-* depth
+* ppo2 - ppo2 you want to use
+* depth - depth in metres
 
 # MaxDepth Calculation
 Determines the maximum depth for a given gas and ppo2 value (usually 1.4 or 1.6 for bailout)
 Use 1.6 with your cylinder bottom gas and use with 1.4 with your setpoint
 
-* ppo2
-* o2
+* ppo2 - ppo2 to be used
+* o2 - O2 to calculate with
 
 # pp02 calculation
 
@@ -50,8 +52,8 @@ determines the pp02 at a given depth for a gax mixture
 
 ppo2 -gas -depth
 
-* gas
-* depth
+* gas - gas to be used
+* depth - depth in meters
 
 #EquivalentAirDepth 
 Calculates the equivalent air depth with nitrox for your setpoint
@@ -59,19 +61,19 @@ Calculates the equivalent air depth with nitrox for your setpoint
 
 EquivalentAirDepth -fo2 -depth
 
-* fo2
-* depth
+* fo2 - setpoint in loop or actual gas (bailout)
+* depth - depth in meters
 
 #SACRate
 Calculate your SAC rate
 
 SACRate -PressureStart -PressureEnd -AverageDepth -Minutes -CylinderCapacity
 
-*PressureStart
-*PressureEnd
-*AverageDepth
-*Minutes
-*CylinderCapacity
+* PressureStart - pressure at start of measurement 
+* PressureEnd - pressure at end of measurement
+* AverageDepth - average depth from start to finish of measurement
+* Minutes - minutes used for measurement
+* CylinderCapacity - capacity of cilinder in litres
 
 
 
