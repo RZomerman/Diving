@@ -1,4 +1,6 @@
 # Diving
+Everything is without warranty - always doublecheck the calculations. You are responsible what you dive including your dive planning. Always double analyze and act on that.
+
 
 This is for the Mares Horizon only - to determine / calculate the required info.
 
