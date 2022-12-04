@@ -8,7 +8,7 @@ All calculations use meters and the digits for o2 % *(such as 40 and 32   - for 
 
 the following modules are available
 
-#DivePlanRow
+# DivePlanRow
 Calculates the required output for a single row in the Horizon Diveplanner, including NOAA and OTU limits
 
 DivePlanRow -depth -minutes -gas- Fo2Setpoint -vo2
@@ -57,9 +57,8 @@ ppo2 -gas -depth
 * gas - gas to be used
 * depth - depth in meters
 
-#EquivalentAirDepth 
+# EquivalentAirDepth 
 Calculates the equivalent air depth with nitrox for your setpoint
-
 
 EquivalentAirDepth -fo2 -depth
 
