@@ -6,6 +6,27 @@ This is for the Mares Horizon only - to determine / calculate the required info.
 
 All calculations use meters and the digits for o2 % *(such as 40 and 32   - for 40 meters and 32 percent nitrox)
 
+
+# V2 implements the Excel file automatic addition - note that this is still on a per line item, but it also allows you to "close" the excel file and perform all calculations for the Excel file as well.. I use iDecoPro for example to determine every line. 
+
+Cells will be highlited for "ppo2" violations (above 1.6) 
+
+# v2 working: 
+copy the excel file into a new one (to keep the original clean)
+copy .\HorizonPlanning.xlsx test10.xlsx
+>open the excel file
+$Sheet=OpenExcel c:\diving\test10.xlsx
+DivePlanRow -depth 30 -minutes 20 -gas 32 -Fo2Setpoint 28 -vo2 0.8 -WorkSheet $Sheet
+(add as required)
+CloseExcel -WorkSheet $Excel
+
+You will then see required litres etc.. 
+
+# Bailout
+Note that the system can only provide max depth + average bailout calculations (meaning no decompression = straight up) .. if you need to deco -- you need to manually calculate this all - based on mandatory deco!!
+
+Add the lines for diving: 
+
 the following modules are available
 
 # DivePlanRow
