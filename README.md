@@ -17,11 +17,12 @@ Cells will be highlited for "ppo2" violations (above 1.6)
 
 copy the excel file into a new one (to keep the original clean)
 
-copy .\HorizonPlanning.xlsx test10.xlsx
+>copy .\HorizonPlanning.xlsx test10.xlsx
 
 open the excel file
 
 >$Sheet=OpenExcel c:\diving\test10.xlsx
+
 Add rows from the iDeco diveplanner
 
 >DivePlanRow -depth 30 -minutes 20 -gas 32 -Fo2Setpoint 28 -vo2 0.8 -WorkSheet $Sheet
