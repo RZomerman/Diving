@@ -20,11 +20,11 @@ copy .\HorizonPlanning.xlsx test10.xlsx
 >open the excel file
 >
 $Sheet=OpenExcel c:\diving\test10.xlsx
-
+>Add rows from the iDeco diveplanner
 DivePlanRow -depth 30 -minutes 20 -gas 32 -Fo2Setpoint 28 -vo2 0.8 -WorkSheet $Sheet
 
 (add as required)
-
+>close the Excel file and calculate
 CloseExcel -WorkSheet $Excel
 
 You will then see required litres etc.. 
