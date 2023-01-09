@@ -36,9 +36,8 @@ You will then see required litres etc..
 # Bailout
 Note that the system can only provide max depth + average bailout calculations (meaning no decompression = straight up) .. if you need to deco -- you need to manually calculate this all - based on mandatory deco!!
 
-Add the lines for diving: 
 
-the following modules are available
+## Modules in the system
 
 # DivePlanRow
 Calculates the required output for a single row in the Horizon Diveplanner, including NOAA and OTU limits
