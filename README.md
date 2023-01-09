@@ -12,12 +12,19 @@ All calculations use meters and the digits for o2 % *(such as 40 and 32   - for 
 Cells will be highlited for "ppo2" violations (above 1.6) 
 
 # v2 working: 
+
 copy the excel file into a new one (to keep the original clean)
+
 copy .\HorizonPlanning.xlsx test10.xlsx
+
 >open the excel file
+>
 $Sheet=OpenExcel c:\diving\test10.xlsx
+
 DivePlanRow -depth 30 -minutes 20 -gas 32 -Fo2Setpoint 28 -vo2 0.8 -WorkSheet $Sheet
+
 (add as required)
+
 CloseExcel -WorkSheet $Excel
 
 You will then see required litres etc.. 
